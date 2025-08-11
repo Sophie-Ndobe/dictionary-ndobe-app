@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1 className="mt-3">My Dictionary App</h1>
+        <h1 className="mt-3 mb-5">My Dictionary App</h1>
         <Dictionary />
         <footer>
           <p>

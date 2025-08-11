@@ -1,11 +1,24 @@
 import React from "react";
+import "./Results.css";
+import Meanings from "./Meanings";
 
 export default function Results(props) {
   console.log(props.results);
-  return (
-    <div className="Results">
-      <h2>Word</h2>
-      <p>These are the results from the API call</p>
-    </div>
-  );
+
+  if (props.results) {
+    return (
+      <div className="Results">
+        <h2>{props.results.word}</h2>
+        {props.results.meanings.map(function (meaning, index) {
+          return (
+            <div key={index}>
+              <Meanings meanings={meaning} />
+            </div>
+          );
+        })}
+      </div>
+    );
+  } else {
+    return null;
+  }
 }

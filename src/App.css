@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App footer {
+  margin-top: 50px;
+  opacity: 0.7;
+}
 .App footer a {
   color: blue;
 }
